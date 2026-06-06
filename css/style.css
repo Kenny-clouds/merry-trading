@@ -1,0 +1,244 @@
+/* ============================================================
+   梅睿贸易 Merry Trading Company - 共享样式
+   所有层级页面统一风格
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #2c3e50;
+    background: #f8f9fa;
+    line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ★ 英文标注：在中文下方小字浅色显示 */
+.en {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+.en-sm {
+    font-size: 11px;
+    color: #bbb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== 导航栏 ========== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    transition: box-shadow 0.3s;
+}
+.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo { font-size: 22px; font-weight: 700; color: #1a73e8; letter-spacing: 1px; }
+.logo small { font-weight: 400; font-size: 14px; color: #888; }
+
+.nav-links { display: flex; list-style: none; gap: 36px; }
+.nav-links a {
+    font-size: 15px; font-weight: 500; color: #555;
+    transition: color 0.2s; position: relative;
+}
+.nav-links a::after {
+    content: ''; position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 2px; background: #1a73e8; transition: width 0.25s;
+}
+.nav-links a:hover { color: #1a73e8; }
+.nav-links a:hover::after { width: 100%; }
+
+/* ========== 面包屑导航 ========== */
+.breadcrumb {
+    margin-top: 84px;
+    padding: 14px 0;
+    font-size: 13px;
+    color: #999;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+.breadcrumb a { color: #1a73e8; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { color: #333; font-weight: 500; }
+
+/* ========== 页面标题 ========== */
+.page-header {
+    text-align: center;
+    padding: 48px 0 32px;
+}
+.page-header h1 { font-size: 30px; font-weight: 700; margin-bottom: 8px; }
+.page-header p { color: #888; font-size: 16px; }
+
+/* ========== 卡片网格 ========== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+.card-body { padding: 18px; }
+.card-title { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+.card-desc { font-size: 13px; color: #888; line-height: 1.5; }
+.card-footer {
+    padding: 10px 18px 14px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-footer .arrow { font-size: 13px; color: #1a73e8; font-weight: 500; }
+
+/* ========== 子类目列表（三级/系列页用） ========== */
+.subcat-list {
+    padding-bottom: 60px;
+}
+.subcat-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.subcat-item:hover { background: #f5f7ff; }
+.subcat-item h3 { font-size: 16px; font-weight: 600; }
+.subcat-item p { font-size: 13px; color: #999; margin-top: 4px; }
+.subcat-item .arrow { color: #1a73e8; font-size: 20px; }
+
+/* ========== 产品列表（产品维度） ========== */
+.product-list { padding-bottom: 60px; }
+.product-row {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 22px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.product-row:hover { background: #f5f7ff; }
+.product-row .left { flex: 1; }
+.product-row h4 { font-size: 15px; font-weight: 600; }
+.product-row .desc { font-size: 13px; color: #999; margin-top: 3px; }
+.product-row .right { text-align: right; }
+.product-row .price { font-size: 14px; color: #1a73e8; font-weight: 600; }
+
+/* ========== 产品详情页 ========== */
+.product-detail {
+    padding-bottom: 60px;
+}
+.product-detail .main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.product-detail .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.product-detail .info-item {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+.product-detail .info-item label {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.product-detail .info-item .value {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+.product-detail .desc-box {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ========== 底部 ========== */
+footer {
+    background: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 32px 20px;
+    font-size: 14px;
+}
+footer a { color: #6ea8fe; }
+.beian { margin-top: 6px; font-size: 13px; }
+
+/* ========== 响应式 ========== */
+@media (max-width: 1024px) {
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .product-detail .info-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .card-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card-img { height: 140px; }
+}
+@media (max-width: 480px) {
+    .card-grid { grid-template-columns: 1fr; }
+}

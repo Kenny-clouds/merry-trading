@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅睿贸易 - Merry Trading Company</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">
+            梅睿贸易 <small>Merry Trading Company</small>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#products">产品中心</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========== Hero ========== -->
+<section class="hero" style="margin-top:64px;height:460px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:url('https://picsum.photos/1920/600?random=hero') center/cover no-repeat;opacity:0.2;"></div>
+    <div style="position:relative;z-index:1;max-width:700px;padding:0 20px;">
+        <h1 style="font-size:42px;font-weight:700;margin-bottom:6px;letter-spacing:2px;">合作共赢</h1>
+        <span class="en" style="color:rgba(255,255,255,0.7);font-size:14px;display:block;margin-bottom:20px;">Win-Win Cooperation</span>
+        <a href="#products" style="display:inline-block;padding:14px 40px;background:#fff;color:#1a73e8;border-radius:50px;font-weight:600;font-size:16px;">浏览产品 / Browse Products</a>
+    </div>
+</section>
+
+<!-- ========== 产品中心 ========== -->
+<section id="products" style="padding:60px 0;">
+    <div class="container">
+        <h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">产品中心</h2>
+        <span class="en" style="text-align:center;margin-bottom:36px;">Product Center</span>
+        <p style="text-align:center;color:#888;font-size:14px;margin-bottom:40px;">选择下方一级产品线查看详情 · Select a product line below</p>
+
+        <div class="card-grid">
+            <!-- ★ 一级产品线 1：宠物 Pet -->
+            <div class="card" onclick="location.href='level2/index.html'" style="text-align:center;">
+                <img class="card-img" src="https://picsum.photos/400/250?random=pet" alt="宠物 Pet" style="height:200px;">
+                <div class="card-body">
+                    <h3 class="card-title">🐱 宠物</h3>
+                    <span class="en">Pet</span>
+                    <p class="card-desc" style="margin-top:6px;">宠物食品 · 居家 · 卫生保健 · 户外出行</p>
+                    <span class="en en-sm">Pet Food · Home &amp; Life · Health · Outdoor</span>
+                </div>
+                <div class="card-footer" style="justify-content:center;">
+                    <span class="arrow">进入 → / Enter</span>
+                </div>
+            </div>
+
+            <!-- ★ 一级产品线 2：智能背包 Smart Backpack（新增） -->
+            <div class="card" onclick="location.href='level2-smart-backpack/index.html'" style="text-align:center;">
+                <img class="card-img" src="https://picsum.photos/400/250?random=backpack" alt="智能背包 Smart Backpack" style="height:200px;">
+                <div class="card-body">
+                    <h3 class="card-title">🎒 智能背包</h3>
+                    <span class="en">Smart Backpack</span>
+                    <p class="card-desc" style="margin-top:6px;">智能背包 · 户外背包 · 商务背包</p>
+                    <span class="en en-sm">Smart Bags · Outdoor · Business</span>
+                </div>
+                <div class="card-footer" style="justify-content:center;">
+                    <span class="arrow">进入 → / Enter</span>
+                </div>
+            </div>
+
+            <!-- ★ 一级产品线 3：汽车配件 Auto Parts（新增） -->
+            <div class="card" onclick="location.href='level2-auto-parts/index.html'" style="text-align:center;">
+                <img class="card-img" src="https://picsum.photos/400/250?random=autoparts" alt="汽车配件 Auto Parts" style="height:200px;">
+                <div class="card-body">
+                    <h3 class="card-title">🚗 汽车配件</h3>
+                    <span class="en">Auto Parts</span>
+                    <p class="card-desc" style="margin-top:6px;">内外饰件 · 电子配件 · 保养用品</p>
+                    <span class="en en-sm">Interior · Exterior · Electronics · Maintenance</span>
+                </div>
+                <div class="card-footer" style="justify-content:center;">
+                    <span class="arrow">进入 → / Enter</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 关于我们 ========== -->
+<section id="about" style="padding:60px 0;background:#fff;">
+    <div class="container">
+        <h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">关于我们</h2>
+        <span class="en" style="text-align:center;margin-bottom:30px;">About Us</span>
+        <div style="max-width:760px;margin:0 auto;text-align:center;color:#666;line-height:1.9;font-size:15px;">
+            <p>梅睿贸易（Merry Trading Company）专注于宠物用品、智能背包及汽车配件的进出口贸易，总部位于中国。</p>
+            <span class="en en-sm" style="text-align:center;margin-bottom:10px;">Merry Trading Co. specializes in pet supplies, smart backpacks, and auto parts import/export.</span>
+            <p style="margin-top:14px;">我们为全球客户提供全品类产品的一站式 FOB 出口服务，致力于成为值得信赖的供应链伙伴。</p>
+            <span class="en en-sm" style="text-align:center;">We provide one-stop FOB export services for global clients, committed to being a trusted supply chain partner.</span>
+            <p style="margin-top:14px;"><strong>经营理念 / Philosophy：</strong>合作共赢 Win-Win Cooperation</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 联系我们 ========== -->
+<section id="contact" style="padding:60px 0;background:#f0f4f8;">
+    <div class="container">
+        <h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">联系我们</h2>
+        <span class="en" style="text-align:center;margin-bottom:30px;">Contact Us</span>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:800px;margin:0 auto;">
+            <div style="text-align:center;background:#fff;padding:28px 16px;border-radius:12px;">
+                <div style="font-size:28px;margin-bottom:10px;">📍</div>
+                <h4 style="font-size:15px;margin-bottom:2px;">公司地址</h4>
+                <span class="en en-sm">Address</span>
+                <p style="font-size:13px;color:#888;margin-top:6px;">中国 · XX省XX市XX区</p>
+            </div>
+            <div style="text-align:center;background:#fff;padding:28px 16px;border-radius:12px;">
+                <div style="font-size:28px;margin-bottom:10px;">📞</div>
+                <h4 style="font-size:15px;margin-bottom:2px;">联系电话</h4>
+                <span class="en en-sm">Phone</span>
+                <p style="font-size:13px;color:#888;margin-top:6px;">+86-XXX-XXXXXXXX</p>
+            </div>
+            <div style="text-align:center;background:#fff;padding:28px 16px;border-radius:12px;">
+                <div style="font-size:28px;margin-bottom:10px;">✉️</div>
+                <h4 style="font-size:15px;margin-bottom:2px;">电子邮箱</h4>
+                <span class="en en-sm">Email</span>
+                <p style="font-size:13px;color:#888;margin-top:6px;">contact@merrytrade.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 梅睿贸易 Merry Trading Company. All Rights Reserved.</p>
+        <p class="beian"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">京ICP备XXXXXXXX号-1</a></p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
