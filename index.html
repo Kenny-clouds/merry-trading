@@ -1,1 +1,108 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>梅睿贸易 - Merry Trading Company</title><link rel="stylesheet" href="css/style.css"></head><body><nav class="navbar" id="navbar"><div class="container"><div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">梅睿贸易 <small>Merry Trading Company</small></div><ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="index.html#products">产品中心</a></li></ul></div></nav><section class="hero" style="margin-top:64px;height:460px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff;"><div style="position:relative;z-index:1;max-width:700px;padding:0 20px;"><h1 style="font-size:42px;font-weight:700;margin-bottom:6px;">合作共赢</h1><span class="en" style="color:rgba(255,255,255,0.7);font-size:14px;display:block;margin-bottom:20px;">Win-Win Cooperation</span><a href="#products" style="display:inline-block;padding:14px 40px;background:#fff;color:#1a73e8;border-radius:50px;font-weight:600;">浏览产品</a></div></section><section id="products" style="padding:60px 0;"><div class="container"><h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">产品中心</h2><span class="en" style="text-align:center;margin-bottom:36px;">Product Center</span><div class="card-grid" style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;"><div class="card" onclick="location.href='level2/宠物-Pet.html'" style="cursor:pointer;text-align:center;flex:0 1 280px;"><div style="height:160px;background:#eef0f4;display:flex;align-items:center;justify-content:center;color:#1a73e8;font-size:36px;">📂</div><div class="card-body"><h3 class="card-title">宠物 Pet</h3><span class="en">01</span><p style="margin-top:6px;color:#888;font-size:13px;">119 个产品</p></div><div class="card-footer" style="justify-content:center;"><span class="arrow">查看 → / View</span></div></div></div></div></section><section id="about" style="padding:60px 0;background:#fff;"><div class="container"><h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">关于我们</h2><span class="en" style="text-align:center;margin-bottom:30px;">About Us</span><div style="max-width:760px;margin:0 auto;text-align:center;color:#666;line-height:1.9;"><p>梅睿贸易专注于进出口贸易</p></div></div></section><section id="contact" style="padding:60px 0;background:#f0f4f8;"><div class="container"><h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:4px;">联系我们</h2><span class="en" style="text-align:center;margin-bottom:36px;">Contact Us</span><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:800px;margin:0 auto;"><div style="text-align:center;background:#fff;padding:28px;border-radius:12px;"><div style="font-size:28px;">📞</div><h4>电话</h4><p style="font-size:13px;color:#888;">+86</p></div><div style="text-align:center;background:#fff;padding:28px;border-radius:12px;"><div style="font-size:28px;">✉️</div><h4>邮箱</h4><p style="font-size:13px;color:#888;">contact@merrytrade.com</p></div></div></div></section><footer><div class="container"><p>&copy; 2026 梅睿贸易 Merry Trading Company. All Rights Reserved.</p></div></footer><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>梅睿贸易 - Merry Trading Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .wc-nav { position:relative; height:64px; background:#fff; border-bottom:1px solid #eef0f4; display:flex; align-items:center; padding:0 40px; }
+        .wc-nav .wc-logo { font-size:18px; font-weight:700; cursor:pointer; }
+        .wc-nav .wc-logo small { font-size:12px; font-weight:400; color:#888; display:block; }
+        .wc-nav ul { list-style:none; display:flex; gap:24px; margin-left:auto; }
+        .wc-nav ul li a { text-decoration:none; color:#333333; font-size:14px; }
+        .wc-hero { height:460px; display:flex; align-items:center; justify-content:center; text-align:center; background: linear-gradient(135deg, #1a73e8, #0d47a1); color:#fff; }
+        .wc-hero h1 { font-size:42px; font-weight:700; margin-bottom:4px; }
+        .wc-hero .wc-en { color:rgba(255,255,255,0.7); font-size:13px; display:block; margin-bottom:20px; }
+        .wc-hero .wc-sub { font-size:16px; opacity:0.9; margin-bottom:20px; }
+        .wc-hero .wc-btn { display:inline-block; padding:14px 40px; background:#fff; color:#1a73e8; border-radius:50px; font-weight:600; text-decoration:none; cursor:pointer; }
+        .wc-section { padding:60px 0; }
+        .wc-section-alt { background: #f0f4f8; }
+        .wc-container { max-width:1100px; margin:0 auto; padding:0 20px; }
+        .wc-section-title { text-align:center; font-size:28px; font-weight:700; margin-bottom:4px; }
+        .wc-section-en { text-align:center; font-size:12px; color:#aaa; display:block; margin-bottom:36px; }
+        .wc-card-grid { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; }
+        .wc-card { flex:0 1 280px; background:#ffffff; border-radius:12px; overflow:hidden; border:1px solid #eef0f4; cursor:pointer; transition:box-shadow .2s; }
+        .wc-card:hover { box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .wc-card-icon { height:160px; background:#eef0f4; display:flex; align-items:center; justify-content:center; color:#1a73e8; font-size:36px; }
+        .wc-card-body { padding:20px; text-align:center; }
+        .wc-card-title { font-size:16px; font-weight:600; margin-bottom:2px; }
+        .wc-card-en { font-size:11px; color:#aaa; }
+        .wc-card-count { margin-top:6px; font-size:13px; color:#888; }
+        .wc-card-footer { padding:12px; text-align:center; border-top:1px solid #eef0f4; color:#1a73e8; font-size:13px; }
+        .wc-contact-grid { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; max-width:800px; margin:0 auto; }
+        .wc-contact-card { text-align:center; background:#ffffff; padding:28px; border-radius:12px; flex:0 1 180px; border:1px solid #eef0f4; }
+        .wc-contact-icon { font-size:28px; margin-bottom:8px; }
+        .wc-contact-card h4 { font-size:14px; font-weight:600; margin-bottom:4px; }
+        .wc-contact-card p { font-size:13px; color:#888; }
+        .wc-about-text { max-width:760px; margin:0 auto; text-align:center; color:#666; line-height:1.9; font-size:14px; }
+        .wc-footer { text-align:center; padding:30px; background:#222; color:#aaa; font-size:13px; }
+    </style>
+</head>
+<body>
+    <nav class="wc-nav">
+        <div class="wc-logo">梅睿贸易
+            <small>Merry Trading Company</small>
+        </div>
+        <ul><li><a href="index.html">首页</a></li><li><a href="index.html#products">产品中心</a></li><li><a href="#about">关于我们</a></li><li><a href="#contact">联系我们</a></li></ul>
+    </nav>
+
+    <section class="wc-hero">
+        <div style="max-width:700px;padding:0 20px;">
+            <h1>合作共赢，共创辉煌！！！</h1>
+            <span class="wc-en">Win-Win Cooperation</span>
+            <p class="wc-sub">专业的宠物用品进出口贸易商</p>
+            <a href="#products" class="wc-btn">浏览产品</a>
+        </div>
+    </section>
+
+    <section class="wc-section" id="products">
+        <div class="wc-container">
+            <h2 class="wc-section-title">产品中心</h2>
+            <span class="wc-section-en">Product Center</span>
+            <div class="wc-card-grid"><div class="wc-card" onclick="location.href='level2/宠物-Pet.html'">
+            <div class="wc-card-icon">📂</div>
+            <div class="wc-card-body">
+                <h3 class="wc-card-title">宠物 Pet</h3>
+                <span class="wc-card-en">01</span>
+                <p class="wc-card-count">119 个产品</p>
+            </div>
+            <div class="wc-card-footer">查看 →</div>
+        </div></div>
+        </div>
+    </section>
+
+    <section class="wc-section wc-section-alt" id="about">
+        <div class="wc-container">
+            <h2 class="wc-section-title">关于我们</h2>
+            <span class="wc-section-en">About Us</span>
+            <div class="wc-about-text">
+                <p>梅睿贸易专注于宠物用品进出口贸易，致力于为全球客户提供优质的产品与服务。</p>
+                <p style="margin-top:12px;color:#999;">Merry Trading focuses on pet products import & export, committed to providing quality products and services to global customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wc-section" id="contact">
+        <div class="wc-container">
+            <h2 class="wc-section-title">联系我们</h2>
+            <span class="wc-section-en">Contact Us</span>
+            <div class="wc-contact-grid">
+                <div class="wc-contact-card">
+                        <div class="wc-contact-icon">📞</div>
+                        <h4>电话</h4>
+                        <p>+86</p>
+                    </div><div class="wc-contact-card">
+                        <div class="wc-contact-icon">✉️</div>
+                        <h4>邮箱</h4>
+                        <p>contact@merrytrade.com</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="wc-footer">
+        <p>© 2026 梅睿贸易 Merry Trading Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
